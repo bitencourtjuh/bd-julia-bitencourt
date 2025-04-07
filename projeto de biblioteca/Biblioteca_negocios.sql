@@ -1,7 +1,8 @@
 CREATE DATABASE negocios;
+USE negocios;
 CREATE TABLE regra_de_negocios( 
-Id INT PRIMARY KEY ,
-regra VARCHAR (100)
+IdNegocios INT PRIMARY KEY ,
+regra VARCHAR (100) NOT NULL
 );
 INSERT INTO regra_de_negocios VALUES ("RN01", "Limite de 3 livros por usuário ");
 INSERT INTO regra_de_negocios VALUES ("RN02", "Prazo de devolução: 14 dias ");
